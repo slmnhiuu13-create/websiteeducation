@@ -1,0 +1,57 @@
+/* =========================================================
+   TJKT EDUCATION - LIGHT & DARK MODE THEME SYSTEM
+   ========================================================= */
+
+/* Light Mode Overrides */
+body.light-mode {
+  background-color: #F8FAFC !important;
+  color: #0F172A !important;
+}
+
+body.light-mode .bg-tech-grid {
+  background-image: 
+    linear-gradient(to right, rgba(15, 23, 42, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 23, 42, 0.05) 1px, transparent 1px) !important;
+}
+
+body.light-mode .glass-card {
+  background: rgba(255, 255, 255, 0.85) !important;
+  border-color: rgba(59, 130, 246, 0.2) !important;
+  color: #0F172A !important;
+}
+
+body.light-mode .glass-card-hover:hover {
+  background: #FFFFFF !important;
+  border-color: #3B82F6 !important;
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.15) !important;
+}
+
+body.light-mode .text-white {
+  color: #0F172A !important;
+}
+
+body.light-mode .text-slate-300,
+body.light-mode .text-slate-400 {
+  color: #334155 !important;
+}
+
+body.light-mode .bg-dark-base,
+body.light-mode .bg-dark-surface,
+body.light-mode .bg-dark-card {
+  background-color: #F1F5F9 !important;
+}
+
+body.light-mode .border-slate-800,
+body.light-mode .border-slate-700 {
+  border-color: #CBD5E1 !important;
+}
+
+body.light-mode header.glass-card {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border-bottom: 1px solid #E2E8F0 !important;
+}
+
+body.light-mode footer {
+  background-color: #E2E8F0 !important;
+  border-top-color: #CBD5E1 !important;
+}
