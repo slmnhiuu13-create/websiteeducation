@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "category": "TJKT",
+    "question": "Layer apakah dalam model OSI yang bertanggung jawab untuk menentukan jalur pengiriman data terbaik (Routing) menggunakan IP Address?",
+    "options": ["Application Layer", "Transport Layer", "Network Layer", "Data Link Layer"],
+    "answer": 2,
+    "explanation": "Network Layer (Layer 3 OSI) menangani pengalamatan logika (IP Address) dan menentukan rute terbaik (Routing) melalui Router."
+  },
+  {
+    "id": 2,
+    "category": "TJKT",
+    "question": "Manakah urutan kabel UTP standar T568B yang benar dari pin 1 hingga pin 8?",
+    "options": [
+      "Putih-Hijau, Hijau, Putih-Orange, Biru, Putih-Biru, Orange, Putih-Cokelat, Cokelat",
+      "Putih-Orange, Orange, Putih-Hijau, Biru, Putih-Biru, Hijau, Putih-Cokelat, Cokelat",
+      "Putih-Orange, Hijau, Putih-Hijau, Biru, Putih-Biru, Orange, Putih-Cokelat, Cokelat",
+      "Putih-Biru, Biru, Putih-Orange, Orange, Putih-Hijau, Hijau, Putih-Cokelat, Cokelat"
+    ],
+    "answer": 1,
+    "explanation": "Standar T568B: 1. Putih-Orange, 2. Orange, 3. Putih-Hijau, 4. Biru, 5. Putih-Biru, 6. Hijau, 7. Putih-Cokelat, 8. Cokelat."
+  },
+  {
+    "id": 3,
+    "category": "TJKT",
+    "question": "Berapakah jumlah host yang dapat dialokasikan (usable hosts) pada subnet dengan notasi CIDR /26?",
+    "options": ["62 Host", "64 Host", "126 Host", "30 Host"],
+    "answer": 0,
+    "explanation": "Prefix /26 memiliki 2^(32-26) = 64 IP total. Usable hosts = 64 - 2 (Network ID & Broadcast ID) = 62 Host."
+  },
+  {
+    "id": 4,
+    "category": "TJKT",
+    "question": "Perangkat jaringan apakah yang berfungsi menghubungkan banyak komputer dalam satu segmen LAN berbasis tabel MAC Address?",
+    "options": ["Router", "Switch Layer 2", "Modem ADSL", "Repeater"],
+    "answer": 1,
+    "explanation": "Switch Layer 2 bekerja di Data Link Layer dan meneruskan frame berdasarkan MAC Address perangkat tujuan."
+  },
+  {
+    "id": 5,
+    "category": "TJKT",
+    "question": "Jenis topologi jaringan manakah yang menghubungkan seluruh node ke satu Switch/Hub pusat?",
+    "options": ["Topologi Bus", "Topologi Ring", "Topologi Star", "Topologi Mesh"],
+    "answer": 2,
+    "explanation": "Topologi Star berpusat pada satu konsentrasi perangkat (Switch/Hub). Jika satu kabel ke komputer putus, komputer lain tidak terganggu."
+  },
+  {
+    "id": 6,
+    "category": "TJKT",
+    "question": "Protokol manakah yang beroperasi pada Transport Layer dan mejamin pengiriman data yang reliable (Connection-Oriented)?",
+    "options": ["UDP", "TCP", "IP", "HTTP"],
+    "answer": 1,
+    "explanation": "TCP (Transmission Control Protocol) bersifat Connection-Oriented dan menjamin pengiriman paket data sampai tanpa eror."
+  },
+  {
+    "id": 7,
+    "category": "TJKT",
+    "question": "Manakah di bawah ini yang merupakan rentang alamat IP Private Kelas C?",
+    "options": ["10.0.0.0 - 10.255.255.255", "172.16.0.0 - 172.31.255.255", "192.168.0.0 - 192.168.255.255", "127.0.0.1 - 127.0.0.255"],
+    "answer": 2,
+    "explanation": "IP Private Kelas C didefinisikan oleh RFC 1918 pada rentang 192.168.0.0 hingga 192.168.255.255."
+  },
+  {
+    "id": 8,
+    "category": "TJKT",
+    "question": "Media transmisi fisik manakah yang menggunakan impuls cahaya serat kaca dan kebal terhadap interferensi gelombang elektromagnetik?",
+    "options": ["Kabel UTP Cat6", "Kabel Coaxial", "Fiber Optic", "Kabel STP"],
+    "answer": 2,
+    "explanation": "Fiber Optic mengirimkan gelombang cahaya melalui serat kaca sehingga bebas dari efek induksi medan listrik/magnet."
+  },
+  {
+    "id": 9,
+    "category": "TJKT",
+    "question": "Protokol apakah yang secara otomatis memberikan alamat IP dinamis kepada perangkat client yang baru terhubung ke jaringan?",
+    "options": ["DNS", "DHCP", "FTP", "SNMP"],
+    "answer": 1,
+    "explanation": "DHCP (Dynamic Host Configuration Protocol) mengalokasikan parameter IP address, gateway, dan DNS secara otomatis."
+  },
+  {
+    "id": 10,
+    "category": "TJKT",
+    "question": "Berapakah frekuensi standar jaringan Wi-Fi IEEE 802.11 b/g/n yang memiliki jangkauan sinyal lebih jauh namun lebih rawan interferensi?",
+    "options": ["5 GHz", "2.4 GHz", "60 GHz", "900 MHz"],
+    "answer": 1,
+    "explanation": "Frekuensi 2.4 GHz memiliki jangkauan lebih luas dan kemampuan menembus dinding lebih baik dibandingkan 5 GHz, namun salurannya lebih padat."
+  },
+  {
+    "id": 11,
+    "category": "RPL",
+    "question": "Manakah di bawah ini yang BUKAN merupakan 4 pilar utama dari Pemrograman Berorientasi Objek (OOP)?",
+    "options": ["Encapsulation", "Inheritance", "Compilation", "Polymorphism"],
+    "answer": 2,
+    "explanation": "4 Pilar OOP adalah Encapsulation, Abstraction, Inheritance, dan Polymorphism. Compilation adalah proses kompilasi kode."
+  },
+  {
+    "id": 12,
+    "category": "RPL",
+    "question": "Tag HTML5 manakah yang digunakan secara semantik untuk membungkus area navigasi utama sebuah website?",
+    "options": ["<header>", "<nav>", "<aside>", "<section>"],
+    "answer": 1,
+    "explanation": "Tag `<nav>` adalah elemen semantik HTML5 khusus untuk mengelompokkan tautan navigasi utama."
+  },
+  {
+    "id": 13,
+    "category": "RPL",
+    "question": "Di dalam JavaScript ES6, kata kunci apakah yang digunakan untuk mendeklarasikan variabel ber-scope block yang nilainya tidak dapat diubah (immutable reference)?",
+    "options": ["var", "let", "const", "static"],
+    "answer": 2,
+    "explanation": "`const` mendeklarasikan variabel konstan yang tidak dapat di-reassign."
+  },
+  {
+    "id": 14,
+    "category": "RPL",
+    "question": "HTTP Method manakah dalam arsitektur REST API yang digunakan khusus untuk membuat (create) data baru di server?",
+    "options": ["GET", "POST", "PUT", "DELETE"],
+    "answer": 1,
+    "explanation": "Method POST digunakan untuk mengirimkan payload data baru ke server dalam konsep CRUD."
+  },
+  {
+    "id": 15,
+    "category": "RPL",
+    "question": "Perintah Git manakah yang digunakan untuk membuat branch baru sekaligus berpindah ke branch tersebut?",
+    "options": ["git branch new-branch", "git checkout -b new-branch", "git commit -b new-branch", "git merge new-branch"],
+    "answer": 1,
+    "explanation": "`git checkout -b <nama-branch>` atau `git switch -c <nama-branch>` akan membuat branch baru sekaligus langsung mengaktifkannya."
+  },
+  {
+    "id": 16,
+    "category": "RPL",
+    "question": "Di dalam arsitektur Laravel (MVC), komponen apakah yang bertanggung jawab mengelola logika bisnis dan berinteraksi dengan Database?",
+    "options": ["View", "Controller", "Model", "Route"],
+    "answer": 2,
+    "explanation": "Model (misalnya Eloquent Model) merepresentasikan struktur tabel database dan menangani manipulasi data."
+  },
+  {
+    "id": 17,
+    "category": "RPL",
+    "question": "Metodologi SDLC manakah yang menekankan pada iterasi singkat (sprint), adaptabilitas tinggi terhadap perubahan, dan kolaborasi tim kontinu?",
+    "options": ["Waterfall Model", "Agile Scrum", "V-Model", "Big Bang Model"],
+    "answer": 1,
+    "explanation": "Agile Scrum membagi pengembangan dalam siklus pendek (Sprint 1-4 minggu) untuk pengiriman fitur yang fleksibel."
+  },
+  {
+    "id": 18,
+    "category": "RPL",
+    "question": "Diagram UML manakah yang digunakan untuk memvisualisasikan struktur kelas, atribut, metode, serta hubungan antar kelas dalam sistem?",
+    "options": ["Use Case Diagram", "Sequence Diagram", "Class Diagram", "Activity Diagram"],
+    "answer": 2,
+    "explanation": "Class Diagram merepresentasikan arsitektur statis sistem berorientasi objek."
+  },
+  {
+    "id": 19,
+    "category": "RPL",
+    "question": "Format pertukaran data berbasis teks ringan yang terdiri dari pasangan Key-Value dan Array adalah...",
+    "options": ["XML", "JSON", "YAML", "CSV"],
+    "answer": 1,
+    "explanation": "JSON (JavaScript Object Notation) adalah standar emas pertukaran data ringan pada API modern."
+  },
+  {
+    "id": 20,
+    "category": "RPL",
+    "question": "Tool apakah yang paling efisien untuk membuat Bootable Flashdisk multi-ISO tanpa perlu menformat ulang Flashdisk setiap kali menambah file ISO?",
+    "options": ["Rufus", "Ventoy", "BalenaEtcher", "WinToUSB"],
+    "answer": 1,
+    "explanation": "Ventoy memungkinkan pengguna memasukkan banyak file ISO sekaligus dengan cara menyalin (copy-paste) biasa ke Flashdisk."
+  }
+]

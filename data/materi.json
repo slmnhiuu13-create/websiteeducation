@@ -1,0 +1,244 @@
+{
+  "tjkt": [
+    {
+      "id": "tjkt-1",
+      "title": "Pengertian TJKT",
+      "category": "Dasar TJKT",
+      "summary": "Mengenal bidang Teknik Jaringan Komputer dan Telekomunikasi.",
+      "content": "Teknik Jaringan Komputer dan Telekomunikasi (TJKT) adalah disiplin ilmu kejuruan yang mempelajari perancangan, pengoperasian, pemeliharaan, dan perbaikan sistem jaringan komputer serta infrastruktur telekomunikasi digital modern. TJKT memadukan perangkat keras (hardware), perangkat lunak (software), dan protokol transmisi data.",
+      "illustration": "fa-solid fa-network-wired",
+      "details": [
+        "Fokus Utama: Arsitektur LAN/WAN, Keamanan Jaringan, Fiber Optic, dan Server Administration.",
+        "Peluang Karir: Network Engineer, System Administrator, Cyber Security Analyst, Telecom Specialist.",
+        "Kompetensi Kunci: Konfigurasi Router/Switch, Subnetting IP, Pengkabelan UTP, Mikrotik & Cisco."
+      ]
+    },
+    {
+      "id": "tjkt-2",
+      "title": "Pengertian Jaringan Komputer",
+      "category": "Dasar TJKT",
+      "summary": "Kumpulan dua atau lebih perangkat yang terhubung untuk saling berbagi sumber daya.",
+      "content": "Jaringan Komputer adalah sistem yang menghubungkan dua atau lebih perangkat komputer melalui media transmisi (kabel atau nirkabel) untuk saling bertukar data, berbagi sumber daya (printer, file, internet), dan berkomunikasi secara real-time.",
+      "illustration": "fa-solid fa-diagram-project",
+      "details": [
+        "Prinsip Kerja: Komunikasi antara Client (pengirim/penerima layanan) dan Server (penyedia layanan).",
+        "Komponen Utama: Hardware (NIC, Cable, Switch, Router) & Software (Protokol TCP/IP, OS Network).",
+        "Manfaat: Efisiensi biaya sumber daya, kecepatan akses data, dan kolaborasi terpusat."
+      ]
+    },
+    {
+      "id": "tjkt-3",
+      "title": "Jenis-Jenis Jaringan Komputer",
+      "category": "Dasar TJKT",
+      "summary": "Klasifikasi jaringan berdasarkan luas jangkauan geografis.",
+      "content": "Jaringan komputer dikelompokkan berdasarkan area geografis cakupannya:",
+      "illustration": "fa-solid fa-earth-americas",
+      "details": [
+        "PAN (Personal Area Network): Jangkauan singkat 1-10 meter (Contoh: Bluetooth, IrDA).",
+        "LAN (Local Area Network): Jangkauan lokal seperti kantor atau gedung sekolah (10m - 1km).",
+        "MAN (Metropolitan Area Network): Jangkauan perkotaan menghubungkan beberapa kantor cabang (10km - 50km).",
+        "WAN (Wide Area Network): Jangkauan global antar negara/benua memanfaatkan serat optik bawah laut atau satelit."
+      ]
+    },
+    {
+      "id": "tjkt-4",
+      "title": "Topologi Jaringan",
+      "category": "Dasar TJKT",
+      "summary": "Struktur atau peta pemetaan tata letak hubungan antar node dalam jaringan.",
+      "content": "Topologi Jaringan menentukan bagaimana perangkat dihubungkan secara fisik dan logika.",
+      "illustration": "fa-solid fa-sitemap",
+      "details": [
+        "Topologi Star: Semua node terhubung ke Switch pusat. Mudah di-troubleshoot, paling populer.",
+        "Topologi Bus: Menggunakan kabel utama tunggal (Backbone). Murah tapi rawan tabrakan data (collision).",
+        "Topologi Ring: Data mengalir searah membentuk lingkaran. Jika 1 node putus, seluruh jaringan terganggu.",
+        "Topologi Mesh: Setiap perangkat terhubung langsung ke perangkat lainnya (Full Mesh). Keandalan sangat tinggi tetapi biaya mahal."
+      ]
+    },
+    {
+      "id": "tjkt-5",
+      "title": "Perangkat Keras Jaringan",
+      "category": "Dasar TJKT",
+      "summary": "Komponen fisik pendukung komunikasi data.",
+      "content": "Perangkat jaringan berfungsi mengarahkan, menghubungkan, dan memperkuat sinyal data.",
+      "illustration": "fa-solid fa-server",
+      "details": [
+        "Router: Meneruskan paket data antar subnet/jaringan yang berbeda (Layer 3 OSI).",
+        "Switch: Menghubungkan banyak perangkat dalam satu segmen LAN berbasis MAC Address (Layer 2 OSI).",
+        "Access Point (AP): Memancarkan sinyal Wi-Fi untuk koneksi nirkabel.",
+        "Modem: Mengubah sinyal analog dari ISP menjadi sinyal digital untuk komputer."
+      ]
+    },
+    {
+      "id": "tjkt-6",
+      "title": "Kabel Jaringan & Standardisasi",
+      "category": "Dasar TJKT",
+      "summary": "Media transmisi terpadu kabel tembaga dan serat optik.",
+      "content": "Media kabel adalah fisik penghantar sinyal data dalam jaringan lokal maupun tulang punggung (backbone).",
+      "illustration": "fa-solid fa-cable-car",
+      "details": [
+        "Kabel UTP (Cat5e / Cat6): Menggunakan konektor RJ-45. Standar T568B (Straight) dan T568A (Crossover).",
+        "Kabel Coaxial: Digunakan untuk jaringan TV kabel dan antena dengan transmisi frekuensi tinggi.",
+        "Fiber Optic: Menggunakan inti serat kaca yang mentransmisikan impuls cahaya. Kecepatan hingga ratusan Gbps tanpa gangguan elektromagnetik."
+      ]
+    },
+    {
+      "id": "tjkt-7",
+      "title": "IP Address & Subnetting",
+      "category": "Dasar TJKT",
+      "summary": "Pengalamatan logika 32-bit untuk identifikasi node jaringan.",
+      "content": "IP Address (IPv4) terdiri dari 32 bit angka biner yang dibagi menjadi 4 oktet. Subnetting membagi alamat besar menjadi kelompok subnet yang efisien.",
+      "illustration": "fa-solid fa-microchip",
+      "details": [
+        "Kelas IP: Kelas A (1-127), Kelas B (128-191), Kelas C (192-223).",
+        "IP Private vs Public: IP Private (192.168.x.x, 10.x.x.x) untuk internal LAN, IP Public untuk akses internet global.",
+        "CIDR Prefix: Notasi seperti /24 (255.255.255.0) yang menentukan jumlah host usable (254 host)."
+      ]
+    }
+  ],
+  "rpl": [
+    {
+      "id": "rpl-1",
+      "title": "Algoritma, Flowchart & Pseudocode",
+      "category": "Dasar Pemrograman",
+      "summary": "Langkah logis terstruktur dalam menyelesaikan masalah pemrograman.",
+      "content": "Sebelum menulis kode, seorang developer harus merancang logika dasar berupa Algoritma, simbol visual Flowchart, dan bahasa semu Pseudocode.",
+      "codeSnippet": "// Algoritma Menghitung Luas Persegi Panjang\n1. Masukkan nilai panjang (P)\n2. Masukkan nilai lebar (L)\n3. Hitung Luas = P * L\n4. Tampilkan nilai Luas",
+      "details": ["Algoritma: Urutan langkah logis penyelesaian masalah.", "Flowchart: Diagram alir visual dengan standar simbol ISO.", "Pseudocode: Notasi mirip kode pemrograman asli tanpa sintaks kaku."]
+    },
+    {
+      "id": "rpl-2",
+      "title": "HTML, CSS & JavaScript",
+      "category": "Web Development",
+      "summary": "Trinitas utama pembangun web frontend modern.",
+      "content": "HTML5 membentuk struktur konten, CSS3 menghias tampilan visual dan tata letak, sedangkan JavaScript ES6 memberikan interaktivitas dan logika.",
+      "codeSnippet": "<!-- Contoh HTML + JS -->\n<button id=\"btn\" class=\"bg-blue-500 text-white px-4 py-2\">Klik Saya</button>\n<script>\n  document.getElementById('btn').onclick = () => alert('Hello World!');\n</script>",
+      "details": ["HTML5: Semantic markup (header, nav, main, section, footer).", "CSS3: Flexbox, Grid Layout, Custom Variables, Keyframe Animations.", "JS ES6+: Arrow Functions, Async/Await, Fetch API, DOM Manipulation."]
+    },
+    {
+      "id": "rpl-3",
+      "title": "Backend: PHP, Node.js & MySQL",
+      "category": "Backend Development",
+      "summary": "Pengolahan logika server dan penyimpanan data terstruktur.",
+      "content": "Backend bertugas memproses request pengguna, berinteraksi dengan database MySQL/PostgreSQL, dan menyajikan REST API.",
+      "codeSnippet": "<?php\n// PHP PDO Connection\n$pdo = new PDO('mysql:host=localhost;dbname=tjkt_db', 'root', '');\n$stmt = $pdo->query('SELECT * FROM users');\n$users = $stmt->fetchAll(PDO::FETCH_ASSOC);\n?>",
+      "details": ["PHP 8+: PDO, Prepared Statements, Composer.", "Node.js & Express: Asynchronous I/O, NPM Ecosystem, Middleware.", "MySQL: Relational database, SQL Query, Indexing, Foreign Key."]
+    },
+    {
+      "id": "rpl-4",
+      "title": "Git & GitHub Version Control",
+      "category": "Tools & Workflow",
+      "summary": "Manajemen riwayat revisi kode dan kolaborasi tim.",
+      "content": "Git adalah version control system lokal, sedangkan GitHub/GitLab adalah platform repositori berbasis awan untuk kolaborasi proyek.",
+      "codeSnippet": "# Perintah Dasar Git\ngit init\ngit add .\ngit commit -m \"feat: tambah modul TJKT\"\ngit push origin main",
+      "details": ["Branching Model: main, develop, feature-branches.", "Pull Request & Code Review: Menjaga kualitas kode sebelum merge.", "Merge Conflict: Menyelesaikan bentrokan revisi kode antar developer."]
+    },
+    {
+      "id": "rpl-5",
+      "title": "OOP & REST API Design",
+      "category": "Advanced Programming",
+      "summary": "Pemrograman berorientasi objek dan komunikasi antar layanan.",
+      "content": "Object Oriented Programming (OOP) mengorganisasi kode dalam Class dan Object. REST API menggunakan metode HTTP (GET, POST, PUT, DELETE) dengan data JSON.",
+      "codeSnippet": "// REST API Response JSON\n{\n  \"status\": \"success\",\n  \"code\": 200,\n  \"data\": {\n    \"course\": \"TJKT Education\",\n    \"modules\": 15\n  }\n}",
+      "details": ["4 Pilar OOP: Encapsulation, Abstraction, Inheritance, Polymorphism.", "HTTP Verbs: GET (Read), POST (Create), PUT/PATCH (Update), DELETE (Remove).", "JSON & JSON Web Token (JWT) untuk autentikasi aman."]
+    },
+    {
+      "id": "rpl-6",
+      "title": "Modern Frameworks: React, Express & Laravel",
+      "category": "Frameworks",
+      "summary": "Ekosistem alat pengembang modern untuk membangun aplikasi skala enterprise.",
+      "content": "Framework mempercepat proses pembangunan aplikasi dengan standar struktur yang rapi dan komponen reusable.",
+      "codeSnippet": "// Component React Functional\nimport React from 'react';\nexport default function Banner({ title }) {\n  return <h1 className=\"text-2xl font-bold text-cyan-400\">{title}</h1>;\n}",
+      "details": ["React.js: Library UI berbasis komponen dengan Virtual DOM.", "Laravel: Framework PHP elegan dengan arsitektur MVC & Eloquent ORM.", "Express.js: Framework web minimalis untuk Node.js."]
+    },
+    {
+      "id": "rpl-7",
+      "title": "UML, SDLC, Testing & Deployment",
+      "category": "Software Engineering",
+      "summary": "Siklus hidup rekayasa perangkat lunak dari analisis hingga publikasi.",
+      "content": "Pembangunan perangkat lunak memerlukan perancangan diagram UML (Use Case, Class Diagram), metodologi SDLC (Agile/Scrum), pengujian (Unit Test, QA), dan Deployment (Vercel, Docker, VPS).",
+      "codeSnippet": "# Deployment dengan Docker\ndocker build -t tjkt-edu-app .\ndocker run -p 80:80 -d tjkt-edu-app",
+      "details": ["SDLC Models: Waterfall, Agile Scrum, Kanban.", "Software Testing: Unit Testing, Integration Testing, User Acceptance Test (UAT).", "CI/CD & Cloud Deployment: Automated Deployment via GitHub Actions."]
+    }
+  ],
+  "os": [
+    {
+      "id": "os-1",
+      "title": "Instalasi Windows 10 & Windows 11",
+      "category": "Windows",
+      "tools": ["Flashdisk 8GB+", "ISO Windows 10/11", "Rufus", "Lisensi Product Key"],
+      "requirements": ["Processor 1GHz+ 64-bit", "RAM 4GB (Win 11)", "Storage 64GB+", "TPM 2.0 & Secure Boot (Win 11)"],
+      "steps": [
+        "Buat Bootable Flashdisk menggunakan Rufus dengan memilih ISO Windows dan skema partisi GPT (UEFI).",
+        "Tancapkan Flashdisk ke PC/Laptop, nyalakan PC dan masuk ke BIOS (tekan F2/F12/Del).",
+        "Atur Boot Priority agar Bootable Flashdisk berada di urutan pertama.",
+        "Simpan pengaturan BIOS (F10) dan restart PC hingga muncul layar Windows Setup.",
+        "Pilih Bahasa & Waktu -> Klik 'Install Now' -> Pilih 'Custom: Install Windows only (advanced)'.",
+        "Bagi partisi harddisk/SSD (Minimal Drive C 100GB) dan pilih partisi tersebut untuk instalasi.",
+        "Tunggu proses penyalinan file selesai hingga PC melakukan reboot otomatis."
+      ],
+      "tips": "Matikan koneksi Wi-Fi saat setup Windows 11 agar bisa membuat Local Account tanpa akun Microsoft."
+    },
+    {
+      "id": "os-2",
+      "title": "Instalasi Linux Ubuntu, Debian & Kali Linux",
+      "category": "Linux",
+      "tools": ["Flashdisk 8GB+", "ISO Linux (Ubuntu/Debian/Kali)", "Ventoy / BalenaEtcher"],
+      "requirements": ["RAM 2GB+", "Storage 20GB+", "Arsitektur 64-bit"],
+      "steps": [
+        "Download ISO Linux resmi dari situs resmi (Ubuntu Desktop / Debian / Kali Linux).",
+        "Buat media bootable menggunakan Ventoy atau BalenaEtcher.",
+        "Masuk ke BIOS/UEFI dan matikan 'Secure Boot' jika diperlukan.",
+        "Boot dari Flashdisk dan pilih 'Try or Install Linux'.",
+        "Pilih Bahasa, Tata Letak Keyboard, dan Jenis Instalasi (Normal Installation).",
+        "Pada bagian Partisi, pilih 'Erase disk and install Linux' atau 'Manual Partitioning' (buat swap, /, /home).",
+        "Buat Akun User & Password Administrator (Sudo), lalu klik 'Install Now'."
+      ],
+      "tips": "Kali Linux dikhususkan untuk Penetration Testing. Untuk pemula disarankan memilih Ubuntu Desktop."
+    },
+    {
+      "id": "os-3",
+      "title": "Konfigurasi Virtual Machine (VMware & VirtualBox)",
+      "category": "Virtualization",
+      "tools": ["Oracle VM VirtualBox / VMware Workstation", "File ISO OS"],
+      "requirements": ["CPU pendukung Intel VT-x / AMD-V (Enabled in BIOS)", "RAM 8GB+"],
+      "steps": [
+        "Install VirtualBox atau VMware Workstation di OS Utama (Host).",
+        "Buka VirtualBox -> Klik tombol 'New' -> Beri nama VM dan pilih Jenis OS.",
+        "Alokasikan memori RAM (misal 4096 MB) dan Jumlah CPU Core.",
+        "Buat Virtual Hard Disk (VDI/VMDK) dengan ukuran dinamis (Dynamically Allocated).",
+        "Masuk ke Settings VM -> Storage -> Mount file ISO di bagian Controller IDE/SATA.",
+        "Klik 'Start' untuk menjalankan mesin virtual dan memulai instalasi OS di dalam VM."
+      ],
+      "tips": "Aktifkan fitur 'Guest Additions' di VirtualBox untuk mendukung resolusi Fullscreen & Shared Folder."
+    },
+    {
+      "id": "os-4",
+      "title": "Setup Dual Boot (Windows + Linux)",
+      "category": "Dual Boot",
+      "tools": ["Windows OS (Sudah terinstall)", "Bootable Linux Flashdisk", "Disk Management Tool"],
+      "requirements": ["Free Space Unallocated Minimal 40GB pada SSD/HDD", "Backup Data Penting"],
+      "steps": [
+        "Buka Disk Management di Windows (`diskmgmt.msc`).",
+        "Klik kanan partisi Drive D/C -> Pilih 'Shrink Volume' sebesar 50,000 MB (50GB) untuk menyisakan Unallocated Space.",
+        "Tancapkan Bootable Linux Flashdisk dan Boot via UEFI Menu.",
+        "Jalankan Installer Linux -> Pada menu partisi pilih 'Install Linux alongside Windows Boot Manager'.",
+        "Jika memilih manual: Buat partisi `/` (EXT4) dan partisi `EFI System` jika belum ada.",
+        "Selesaikan instalasi -> Saat komputer di-restart, GRUB Bootloader akan menampilkan pilihan boot ke Windows atau Linux."
+      ],
+      "tips": "Selalu matikan fitur 'Fast Startup' di Control Panel Windows sebelum meng-install Dual Boot."
+    },
+    {
+      "id": "os-5",
+      "title": "Pembuatan Bootable Flashdisk (Rufus & Ventoy)",
+      "category": "Utilities",
+      "tools": ["Flashdisk USB 3.0 Minimal 8GB", "Software Rufus / Ventoy", "File ISO Target"],
+      "requirements": ["Windows PC untuk me-running Rufus/Ventoy"],
+      "steps": [
+        "Menggunakan Rufus: Buka Rufus -> Pilih Device Flashdisk -> Klik 'SELECT' dan masukkan file ISO -> Atur Partition Scheme (GPT untuk UEFI, MBR untuk Legacy BIOS) -> Klik 'START'.",
+        "Menggunakan Ventoy: Buka Ventoy2Disk -> Pilih Flashdisk -> Klik 'Install'. Setelah selesai, cukup seret (drag and drop) file ISO sebanyak-banyaknya langsung ke dalam Flashdisk tanpa perlu di-extract!",
+        "Ventoy memungkinkan 1 Flashdisk memiliki banyak ISO OS sekaligus (Multi-boot)."
+      ],
+      "tips": "Gunakan Ventoy jika Anda sering meng-install berbagai distro OS tanpa perlu format flashdisk berulang kali."
+    }
+  ]
+}
