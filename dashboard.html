@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Belajar - TJKT Education</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark.css">
+</head>
+<body class="bg-tech-grid text-slate-100 min-h-screen relative">
+
+    <div id="preloader">
+        <div class="w-16 h-16 border-4 border-cyan-400 border-t-transparent rounded-full animate-spin mb-4"></div>
+        <span class="text-xs font-mono tracking-widest text-cyan-400">LOADING DASHBOARD...</span>
+    </div>
+
+    <button id="scroll-to-top" title="Kembali ke atas"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-50 glass-card border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-cyan-400 p-0.5 shadow-[0_0_15px_rgba(0,240,255,0.4)]">
+                        <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                            <i class="fa-solid fa-network-wired text-cyan-400 text-lg"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="text-xl font-extrabold tracking-tight text-white">TJKT<span class="text-cyan-400">.Edu</span></span>
+                        <span class="block text-[9px] font-mono text-cyan-400 tracking-wider">FUTURE TECH LAB</span>
+                    </div>
+                </a>
+
+                <nav class="hidden lg:flex items-center space-x-1">
+                    <a href="index.html" class="px-3 py-2 text-xs font-semibold text-slate-300 hover:text-cyan-400 rounded-lg">Home</a>
+                    <a href="about.html" class="px-3 py-2 text-xs font-semibold text-slate-300 hover:text-cyan-400 rounded-lg">Tentang Kami</a>
+                    <a href="tjkt.html" class="px-3 py-2 text-xs font-semibold text-slate-300 hover:text-cyan-400 rounded-lg">Modul TJKT</a>
+                    <a href="rpl.html" class="px-3 py-2 text-xs font-semibold text-slate-300 hover:text-cyan-400 rounded-lg">Modul RPL</a>
+                    <a href="os.html" class="px-3 py-2 text-xs font-semibold text-slate-300 hover:text-cyan-400 rounded-lg">Tutorial OS</a>
+                    <a href="quiz.html" class="px-3 py-2 text-xs font-semibold text-slate-300 hover:text-cyan-400 rounded-lg">Quiz Interaktif</a>
+                    <a href="dashboard.html" class="px-3 py-2 text-xs font-semibold text-cyan-400 font-bold rounded-lg">Dashboard</a>
+                    <a href="contact.html" class="px-3 py-2 text-xs font-semibold text-slate-300 hover:text-cyan-400 rounded-lg">Kontak</a>
+                </nav>
+
+                <div class="flex items-center gap-3">
+                    <button class="trigger-search-btn p-2.5 rounded-xl glass-card text-slate-300 hover:text-cyan-400"><i class="fa-solid fa-magnifying-glass text-sm"></i></button>
+                    <button class="theme-toggle-btn p-2.5 rounded-xl glass-card text-slate-300 hover:text-cyan-400"><i class="fa-solid fa-moon theme-toggle-icon text-sm"></i></button>
+                    <button id="mobile-menu-btn" class="lg:hidden p-2.5 rounded-xl glass-card text-slate-300"><i class="fa-solid fa-bars text-base"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-800 bg-slate-950/95 backdrop-blur-xl px-4 py-4 space-y-2">
+            <a href="index.html" class="block px-3 py-2 rounded-lg text-sm text-slate-300 hover:text-cyan-400">Home</a>
+            <a href="about.html" class="block px-3 py-2 rounded-lg text-sm text-slate-300 hover:text-cyan-400">Tentang Kami</a>
+            <a href="tjkt.html" class="block px-3 py-2 rounded-lg text-sm text-slate-300 hover:text-cyan-400">Modul TJKT</a>
+            <a href="rpl.html" class="block px-3 py-2 rounded-lg text-sm text-slate-300 hover:text-cyan-400">Modul RPL</a>
+            <a href="os.html" class="block px-3 py-2 rounded-lg text-sm text-slate-300 hover:text-cyan-400">Tutorial OS</a>
+            <a href="quiz.html" class="block px-3 py-2 rounded-lg text-sm text-slate-300 hover:text-cyan-400">Quiz Interaktif</a>
+            <a href="dashboard.html" class="block px-3 py-2 rounded-lg text-sm text-cyan-400 font-bold">Dashboard Belajar</a>
+            <a href="contact.html" class="block px-3 py-2 rounded-lg text-sm text-slate-300 hover:text-cyan-400">Kontak</a>
+        </div>
+    </header>
+
+    <!-- DASHBOARD CONTENT -->
+    <section class="py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+            
+            <div class="flex flex-wrap items-center justify-between gap-4 border-b border-slate-800 pb-6">
+                <div>
+                    <span class="text-xs font-mono text-cyan-400 uppercase tracking-widest">RINGKASAN PROGRES USER</span>
+                    <h1 class="text-3xl font-extrabold text-white">Dashboard Belajar Saya</h1>
+                </div>
+
+                <div class="flex items-center gap-3">
+                    <button onclick="resetUserProgress()" class="px-4 py-2 rounded-xl text-xs font-bold glass-card text-rose-400 hover:bg-rose-950/40 border-rose-500/30">
+                        <i class="fa-solid fa-rotate-left mr-1"></i> Reset Progres Belajar
+                    </button>
+                </div>
+            </div>
+
+            <!-- Stats Overview Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <div class="glass-card p-6 rounded-2xl space-y-3 border-cyan-500/30">
+                    <div class="flex items-center justify-between text-xs font-mono text-slate-400">
+                        <span>PROGRES TOTAL</span>
+                        <i class="fa-solid fa-chart-pie text-cyan-400 text-base"></i>
+                    </div>
+                    <div class="text-4xl font-extrabold font-mono text-cyan-400 user-progress-percent">0%</div>
+                    <div class="w-full bg-slate-900 h-2 rounded-full overflow-hidden border border-slate-800">
+                        <div class="bg-cyan-400 h-full rounded-full w-0 user-progress-bar transition-all duration-500"></div>
+                    </div>
+                    <p class="text-xs text-slate-400">Materi Selesai: <strong class="text-white user-progress-count">0 / 19</strong></p>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl space-y-3 border-blue-500/30">
+                    <div class="flex items-center justify-between text-xs font-mono text-slate-400">
+                        <span>SKOR QUIZ TERTINGGI</span>
+                        <i class="fa-solid fa-trophy text-amber-400 text-base"></i>
+                    </div>
+                    <div id="dash-high-score" class="text-4xl font-extrabold font-mono text-amber-400">0</div>
+                    <p id="dash-quiz-attempts" class="text-xs text-slate-400">Total Percobaan Quiz: <strong class="text-white">0 Kali</strong></p>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl space-y-3 border-purple-500/30">
+                    <div class="flex items-center justify-between text-xs font-mono text-slate-400">
+                        <span>BADGE UNLOCKED</span>
+                        <i class="fa-solid fa-award text-purple-400 text-base"></i>
+                    </div>
+                    <div id="dash-badge-count" class="text-4xl font-extrabold font-mono text-purple-400">0 / 4</div>
+                    <p class="text-xs text-slate-400">Lengkapi modul & quiz untuk membuka seluruh badge.</p>
+                </div>
+
+            </div>
+
+            <!-- Badges Section -->
+            <div class="glass-card p-6 sm:p-8 rounded-2xl border-cyan-500/20 space-y-6">
+                <h3 class="text-xl font-bold text-white"><i class="fa-solid fa-medal text-cyan-400 mr-2"></i> Badge Pencapaian</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+                    
+                    <div id="badge-novice" class="p-4 rounded-xl glass-card text-center space-y-2 opacity-40 grayscale transition-all">
+                        <div class="w-12 h-12 rounded-full bg-cyan-500/20 text-cyan-400 flex items-center justify-center mx-auto text-xl">
+                            <i class="fa-solid fa-user-graduate"></i>
+                        </div>
+                        <h4 class="font-bold text-white text-sm">Networking Novice</h4>
+                        <p class="text-[11px] text-slate-400">Selesaikan 1 modul pertama</p>
+                    </div>
+
+                    <div id="badge-tjkt" class="p-4 rounded-xl glass-card text-center space-y-2 opacity-40 grayscale transition-all">
+                        <div class="w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center mx-auto text-xl">
+                            <i class="fa-solid fa-network-wired"></i>
+                        </div>
+                        <h4 class="font-bold text-white text-sm">TJKT Specialist</h4>
+                        <p class="text-[11px] text-slate-400">Selesaikan 7 modul TJKT</p>
+                    </div>
+
+                    <div id="badge-rpl" class="p-4 rounded-xl glass-card text-center space-y-2 opacity-40 grayscale transition-all">
+                        <div class="w-12 h-12 rounded-full bg-purple-500/20 text-purple-400 flex items-center justify-center mx-auto text-xl">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h4 class="font-bold text-white text-sm">Fullstack Dev</h4>
+                        <p class="text-[11px] text-slate-400">Selesaikan 14 modul pembelajaran</p>
+                    </div>
+
+                    <div id="badge-quiz" class="p-4 rounded-xl glass-card text-center space-y-2 opacity-40 grayscale transition-all">
+                        <div class="w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center mx-auto text-xl">
+                            <i class="fa-solid fa-trophy"></i>
+                        </div>
+                        <h4 class="font-bold text-white text-sm">Quiz Master</h4>
+                        <p class="text-[11px] text-slate-400">Raih nilai quiz minimal 80</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Quiz History & Completed Topics Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Quiz History -->
+                <div class="glass-card p-6 rounded-2xl border-cyan-500/20 space-y-4">
+                    <h3 class="text-lg font-bold text-white"><i class="fa-solid fa-history text-cyan-400 mr-2"></i> Riwayat Quiz Terakhir</h3>
+                    <div id="dash-quiz-history-list" class="space-y-3">
+                        <!-- Injected via JS -->
+                    </div>
+                </div>
+
+                <!-- Completed Topics -->
+                <div class="glass-card p-6 rounded-2xl border-cyan-500/20 space-y-4">
+                    <h3 class="text-lg font-bold text-white"><i class="fa-solid fa-check-double text-emerald-400 mr-2"></i> Materi Selesai Dipelajari</h3>
+                    <div id="dash-completed-topics-list" class="space-y-2 max-h-[300px] overflow-y-auto pr-1">
+                        <!-- Injected via JS -->
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SEARCH MODAL -->
+    <div id="search-modal" class="fixed inset-0 z-50 hidden flex items-start justify-center pt-20 px-4 bg-black/80 backdrop-blur-md">
+        <div class="glass-card max-w-2xl w-full p-6 space-y-4 border-cyan-500/30">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                <div class="flex items-center gap-3 w-full">
+                    <i class="fa-solid fa-magnifying-glass text-cyan-400"></i>
+                    <input type="text" id="search-input" placeholder="Cari materi, tutorial, atau soal quiz..." class="w-full bg-transparent text-white placeholder-slate-500 text-sm focus:outline-none font-mono">
+                </div>
+                <button id="close-search-btn" class="p-2 text-slate-400 hover:text-white"><i class="fa-solid fa-xmark text-lg"></i></button>
+            </div>
+            <div id="search-results-container" class="max-h-[60vh] overflow-y-auto pr-1"></div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 border-t border-slate-800 pt-16 pb-12 mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs text-slate-500">
+            <p>&copy; 2026 TJKT Education. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/darkmode.js"></script>
+    <script src="js/progress.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            renderDashboardData();
+        });
+
+        function renderDashboardData() {
+            const history = getQuizHistory();
+            const completed = getCompletedTopics();
+
+            // High score & attempts
+            const highScore = history.length > 0 ? Math.max(...history.map(h => h.score)) : 0;
+            document.getElementById('dash-high-score').textContent = highScore;
+            document.getElementById('dash-quiz-attempts').innerHTML = `Total Percobaan Quiz: <strong class="text-white">${history.length} Kali</strong>`;
+
+            // Badge count
+            let unlockedBadges = 0;
+            if (completed.length >= 1) unlockedBadges++;
+            if (completed.length >= 7) unlockedBadges++;
+            if (completed.length >= 14) unlockedBadges++;
+            if (highScore >= 80) unlockedBadges++;
+            document.getElementById('dash-badge-count').textContent = `${unlockedBadges} / 4`;
+
+            // Render Quiz History List
+            const historyList = document.getElementById('dash-quiz-history-list');
+            if (historyList) {
+                if (history.length === 0) {
+                    historyList.innerHTML = `<p class="text-xs text-slate-400">Belum ada riwayat quiz. Jalankan Quiz Interaktif untuk menguji skor Anda!</p>`;
+                } else {
+                    historyList.innerHTML = history.map(item => `
+                        <div class="p-3 rounded-xl bg-slate-900/80 border border-slate-800 flex items-center justify-between text-xs">
+                            <div>
+                                <span class="font-bold text-white font-mono">Skor: <strong class="text-cyan-400">${item.score}</strong></span>
+                                <span class="block text-[10px] text-slate-400">${item.date} pukul ${item.time} (${item.category})</span>
+                            </div>
+                            <span class="px-2 py-0.5 rounded font-mono text-[10px] ${item.score >= 70 ? 'bg-emerald-500/20 text-emerald-400' : 'bg-amber-500/20 text-amber-400'} font-bold">
+                                ${item.score >= 70 ? 'LULUS' : 'REMIDI'}
+                            </span>
+                        </div>
+                    `).join('');
+                }
+            }
+
+            // Render Completed Topics List
+            const topicsList = document.getElementById('dash-completed-topics-list');
+            if (topicsList) {
+                if (completed.length === 0) {
+                    topicsList.innerHTML = `<p class="text-xs text-slate-400">Belum ada materi yang ditandai selesai. Buka halaman Modul TJKT, RPL, atau Tutorial OS!</p>`;
+                } else {
+                    topicsList.innerHTML = completed.map(id => `
+                        <div class="p-2.5 rounded-lg bg-slate-900/60 border border-slate-800 flex items-center justify-between text-xs">
+                            <span class="font-mono text-cyan-400 font-bold">${id.toUpperCase()}</span>
+                            <span class="text-emerald-400 font-mono text-[10px]"><i class="fa-solid fa-circle-check"></i> Selesai</span>
+                        </div>
+                    `).join('');
+                }
+            }
+        }
+
+        function resetUserProgress() {
+            if (confirm("Apakah Anda yakin ingin mereset seluruh progres belajar dan riwayat quiz?")) {
+                localStorage.removeItem('tjkt_completed_topics');
+                localStorage.removeItem('tjkt_quiz_history');
+                location.reload();
+            }
+        }
+    </script>
+</body>
+</html>

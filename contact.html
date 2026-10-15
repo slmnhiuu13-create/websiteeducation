@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - TJKT Education</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dark.css">
+</head>
+<body class="bg-tech-grid text-slate-100 min-h-screen relative">
+
+    <div id="preloader">
+        <div class="w-16 h-16 border-4 border-cyan-400 border-t-transparent rounded-full animate-spin mb-4"></div>
+        <span class="text-xs font-mono tracking-widest text-cyan-400">LOADING KONTAK...</span>
+    </div>
+
+    <button id="scroll-to-top" title="Kembali ke atas"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!-- NAVBAR -->
+    <header class="sticky top-0 z-50 glass-card border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-cyan-400 p-0.5 shadow-[0_0_15px_rgba(0,240,255,0.4)]">
+                        <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center">
+                            <i class="fa-solid fa-network-wired text-cyan-400 text-lg"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="text-xl font-extrabold tracking-tight text-white">TJKT<span class="text-cyan-400">.Edu</span></span>
+                        <span class="block text-[9px] font-mono text-cyan-400 tracking-wider">FUTURE TECH LAB</span>
+                    </div>
+                </a>
+
+                <nav class="hidden lg:flex items-center space-x-1">
+                    <a href="index.html" class="px-3 py-2 text-xs font-semibold text-slate-300 hover:text-cyan-400 rounded-lg">Home</a>
+                    <a href="about.html" class="px-3 py-2 text-xs font-semibold text-slate-300 hover:text-cyan-400 rounded-lg">Tentang Kami</a>
+                    <a href="tjkt.html" class="px-3 py-2 text-xs font-semibold text-slate-300 hover:text-cyan-400 rounded-lg">Modul TJKT</a>
+                    <a href="rpl.html" class="px-3 py-2 text-xs font-semibold text-slate-300 hover:text-cyan-400 rounded-lg">Modul RPL</a>
+                    <a href="os.html" class="px-3 py-2 text-xs font-semibold text-slate-300 hover:text-cyan-400 rounded-lg">Tutorial OS</a>
+                    <a href="quiz.html" class="px-3 py-2 text-xs font-semibold text-slate-300 hover:text-cyan-400 rounded-lg">Quiz Interaktif</a>
+                    <a href="dashboard.html" class="px-3 py-2 text-xs font-semibold text-slate-300 hover:text-cyan-400 rounded-lg">Dashboard</a>
+                    <a href="contact.html" class="px-3 py-2 text-xs font-semibold text-cyan-400 font-bold rounded-lg">Kontak</a>
+                </nav>
+
+                <div class="flex items-center gap-3">
+                    <button class="trigger-search-btn p-2.5 rounded-xl glass-card text-slate-300 hover:text-cyan-400"><i class="fa-solid fa-magnifying-glass text-sm"></i></button>
+                    <button class="theme-toggle-btn p-2.5 rounded-xl glass-card text-slate-300 hover:text-cyan-400"><i class="fa-solid fa-moon theme-toggle-icon text-sm"></i></button>
+                    <button id="mobile-menu-btn" class="lg:hidden p-2.5 rounded-xl glass-card text-slate-300"><i class="fa-solid fa-bars text-base"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-800 bg-slate-950/95 backdrop-blur-xl px-4 py-4 space-y-2">
+            <a href="index.html" class="block px-3 py-2 rounded-lg text-sm text-slate-300 hover:text-cyan-400">Home</a>
+            <a href="about.html" class="block px-3 py-2 rounded-lg text-sm text-slate-300 hover:text-cyan-400">Tentang Kami</a>
+            <a href="tjkt.html" class="block px-3 py-2 rounded-lg text-sm text-slate-300 hover:text-cyan-400">Modul TJKT</a>
+            <a href="rpl.html" class="block px-3 py-2 rounded-lg text-sm text-slate-300 hover:text-cyan-400">Modul RPL</a>
+            <a href="os.html" class="block px-3 py-2 rounded-lg text-sm text-slate-300 hover:text-cyan-400">Tutorial OS</a>
+            <a href="quiz.html" class="block px-3 py-2 rounded-lg text-sm text-slate-300 hover:text-cyan-400">Quiz Interaktif</a>
+            <a href="dashboard.html" class="block px-3 py-2 rounded-lg text-sm text-slate-300 hover:text-cyan-400">Dashboard Belajar</a>
+            <a href="contact.html" class="block px-3 py-2 rounded-lg text-sm text-cyan-400 font-bold">Kontak</a>
+        </div>
+    </header>
+
+    <!-- CONTENT -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+            
+            <div class="text-center max-w-2xl mx-auto space-y-2">
+                <span class="text-xs font-mono text-cyan-400 uppercase tracking-widest">HUBUNGI TIM KAMI</span>
+                <h1 class="text-3xl sm:text-4xl font-extrabold text-white">Kontak & Pusat Bantuan</h1>
+                <p class="text-xs sm:text-sm text-slate-400">Punya pertanyaan seputar materi TJKT, RPL, atau tutorial OS? Kirimkan pesan Anda langsung di bawah ini.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Contact Form -->
+                <div class="lg:col-span-7 glass-card p-6 sm:p-8 rounded-2xl border-cyan-500/30 space-y-6">
+                    <h3 class="text-xl font-bold text-white mb-2">Kirim Pesan / Feedback</h3>
+                    
+                    <form onsubmit="handleFormSubmit(event)" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-mono text-slate-300 mb-1">Nama Lengkap</label>
+                            <input type="text" required placeholder="Masukkan nama Anda..." class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white text-sm focus:outline-none focus:border-cyan-400">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-mono text-slate-300 mb-1">Alamat Email</label>
+                            <input type="email" required placeholder="contoh@email.com" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white text-sm focus:outline-none focus:border-cyan-400">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-mono text-slate-300 mb-1">Pesan / Pertanyaan</label>
+                            <textarea required rows="4" placeholder="Tuliskan pesan atau feedback Anda..." class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-800 text-white text-sm focus:outline-none focus:border-cyan-400"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-3.5 rounded-xl bg-cyan-400 text-black font-bold text-xs hover:bg-cyan-300 transition-all shadow-[0_0_20px_rgba(0,240,255,0.3)]">
+                            <i class="fa-solid fa-paper-plane mr-1"></i> Kirim Pesan Sekarang
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Google Maps & Info -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="glass-card p-6 rounded-2xl border-cyan-500/20 space-y-4">
+                        <h4 class="font-bold text-white text-base">Lokasi </h4>
+                        <div class="space-y-2 text-xs text-slate-300">
+                            <p class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-cyan-400"></i> Jl. Andalas No. 3, Klaten</p>
+                            <p class="flex items-center gap-2"><i class="fa-solid fa-envelope text-cyan-400"></i> @salmanalfrsy13@gmail.com</p>
+                            <p class="flex items-center gap-2"><i class="fa-solid fa-phone text-cyan-400"></i> +62 813-9025-6536</p>
+                        </div>
+                    </div>
+
+                    <!-- Maps Embed -->
+                    <div class="glass-card p-2 rounded-2xl border-cyan-500/20 overflow-hidden h-64">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5730.07332647425!2d110.59843926106583!3d-7.699853134446687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a43f67045584f%3A0x3f363ad9161be53c!2sBank%20Pasar%20Patma!5e0!3m2!1sid!2sid!4v1785225000999!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SEARCH MODAL -->
+    <div id="search-modal" class="fixed inset-0 z-50 hidden flex items-start justify-center pt-20 px-4 bg-black/80 backdrop-blur-md">
+        <div class="glass-card max-w-2xl w-full p-6 space-y-4 border-cyan-500/30">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                <div class="flex items-center gap-3 w-full">
+                    <i class="fa-solid fa-magnifying-glass text-cyan-400"></i>
+                    <input type="text" id="search-input" placeholder="Cari materi, tutorial, atau soal quiz..." class="w-full bg-transparent text-white placeholder-slate-500 text-sm focus:outline-none font-mono">
+                </div>
+                <button id="close-search-btn" class="p-2 text-slate-400 hover:text-white"><i class="fa-solid fa-xmark text-lg"></i></button>
+            </div>
+            <div id="search-results-container" class="max-h-[60vh] overflow-y-auto pr-1"></div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 border-t border-slate-800 pt-16 pb-12 mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs text-slate-500">
+            <p>&copy; 2026 TJKT Education. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/darkmode.js"></script>
+    <script src="js/progress.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        AOS.init({ duration: 800, once: true });
+
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            alert("Terima kasih! Pesan Anda telah berhasil terkirim. Tim TJKT Education akan membalas via email.");
+            e.target.reset();
+        }
+    </script>
+</body>
+</html>
